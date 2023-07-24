@@ -9,14 +9,14 @@ export default function Navbar(props) {
     <div>
       <nav className={`navbar navbar-expand-lg  navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">{props.random}</Link>
+          <a className="navbar-brand" href="/">{props.random}</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav me-auto ">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">{props.title}</Link>
+                <Link className="nav-link " aria-current="page" to="/">{props.title}</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/about">{props.home}</Link>
